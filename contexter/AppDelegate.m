@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "RemindersViewController.h"
 
 @implementation AppDelegate
 
@@ -16,11 +17,15 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    // Override point for customization after application launch.
-    self.window.backgroundColor = [UIColor whiteColor];
-    [self.window makeKeyAndVisible];
-    return YES;
+  self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+  // Override point for customization after application launch.
+  self.window.backgroundColor = [UIColor whiteColor];
+  [self.window makeKeyAndVisible];
+  UIViewController *remindersControlller = [[RemindersViewController alloc] initWithNibName:nil bundle:nil];
+  UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:remindersControlller];
+  self.window.rootViewController = nav;
+  
+  return YES;
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application

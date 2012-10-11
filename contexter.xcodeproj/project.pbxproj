@@ -24,6 +24,10 @@
 		FDC467F6162762EE008C1C55 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FDC467D5162762ED008C1C55 /* CoreData.framework */; };
 		FDC467FE162762EE008C1C55 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FDC467FC162762EE008C1C55 /* InfoPlist.strings */; };
 		FDC46801162762EE008C1C55 /* contexterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FDC46800162762EE008C1C55 /* contexterTests.m */; };
+		FDC4681616276729008C1C55 /* RemindersViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FDC4681416276729008C1C55 /* RemindersViewController.m */; };
+		FDC4681716276729008C1C55 /* RemindersViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FDC4681416276729008C1C55 /* RemindersViewController.m */; };
+		FDC4681816276729008C1C55 /* RemindersViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FDC4681516276729008C1C55 /* RemindersViewController.xib */; };
+		FDC4681916276729008C1C55 /* RemindersViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FDC4681516276729008C1C55 /* RemindersViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,8 +50,8 @@
 		FDC467DB162762ED008C1C55 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		FDC467DD162762ED008C1C55 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		FDC467DF162762ED008C1C55 /* contexter-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "contexter-Prefix.pch"; sourceTree = "<group>"; };
-		FDC467E0162762ED008C1C55 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		FDC467E1162762ED008C1C55 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		FDC467E0162762ED008C1C55 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = contexter/AppDelegate.h; sourceTree = "<group>"; };
+		FDC467E1162762ED008C1C55 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = contexter/AppDelegate.m; sourceTree = "<group>"; };
 		FDC467E3162762ED008C1C55 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		FDC467E5162762ED008C1C55 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		FDC467E7162762ED008C1C55 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
@@ -58,6 +62,9 @@
 		FDC467FD162762EE008C1C55 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		FDC467FF162762EE008C1C55 /* contexterTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = contexterTests.h; sourceTree = "<group>"; };
 		FDC46800162762EE008C1C55 /* contexterTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = contexterTests.m; sourceTree = "<group>"; };
+		FDC4681316276729008C1C55 /* RemindersViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RemindersViewController.h; sourceTree = "<group>"; };
+		FDC4681416276729008C1C55 /* RemindersViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RemindersViewController.m; sourceTree = "<group>"; };
+		FDC4681516276729008C1C55 /* RemindersViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RemindersViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,10 +93,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FD67541816276AB400D9A83E /* contexter */ = {
+			isa = PBXGroup;
+			children = (
+				FDC467D8162762ED008C1C55 /* Supporting Files */,
+				FDC467E0162762ED008C1C55 /* AppDelegate.h */,
+				FDC467E1162762ED008C1C55 /* AppDelegate.m */,
+				FDC467E9162762ED008C1C55 /* contexter.xcdatamodeld */,
+				FDC46811162766CA008C1C55 /* UI */,
+			);
+			name = contexter;
+			sourceTree = "<group>";
+		};
 		FDC467C0162762ED008C1C55 = {
 			isa = PBXGroup;
 			children = (
-				FDC467D7162762ED008C1C55 /* contexter */,
+				FD67541816276AB400D9A83E /* contexter */,
 				FDC467F9162762EE008C1C55 /* contexterTests */,
 				FDC467CE162762ED008C1C55 /* Frameworks */,
 				FDC467CC162762ED008C1C55 /* Products */,
@@ -117,17 +136,6 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		FDC467D7162762ED008C1C55 /* contexter */ = {
-			isa = PBXGroup;
-			children = (
-				FDC467E0162762ED008C1C55 /* AppDelegate.h */,
-				FDC467E1162762ED008C1C55 /* AppDelegate.m */,
-				FDC467E9162762ED008C1C55 /* contexter.xcdatamodeld */,
-				FDC467D8162762ED008C1C55 /* Supporting Files */,
-			);
-			path = contexter;
-			sourceTree = "<group>";
-		};
 		FDC467D8162762ED008C1C55 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -140,6 +148,7 @@
 				FDC467E7162762ED008C1C55 /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
+			path = contexter;
 			sourceTree = "<group>";
 		};
 		FDC467F9162762EE008C1C55 /* contexterTests */ = {
@@ -159,6 +168,25 @@
 				FDC467FC162762EE008C1C55 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FDC46811162766CA008C1C55 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				FDC46812162766D6008C1C55 /* Controllers */,
+			);
+			name = UI;
+			path = contexter;
+			sourceTree = "<group>";
+		};
+		FDC46812162766D6008C1C55 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				FDC4681316276729008C1C55 /* RemindersViewController.h */,
+				FDC4681416276729008C1C55 /* RemindersViewController.m */,
+				FDC4681516276729008C1C55 /* RemindersViewController.xib */,
+			);
+			name = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -236,6 +264,7 @@
 				FDC467E4162762ED008C1C55 /* Default.png in Resources */,
 				FDC467E6162762ED008C1C55 /* Default@2x.png in Resources */,
 				FDC467E8162762ED008C1C55 /* Default-568h@2x.png in Resources */,
+				FDC4681816276729008C1C55 /* RemindersViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -244,6 +273,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FDC467FE162762EE008C1C55 /* InfoPlist.strings in Resources */,
+				FDC4681916276729008C1C55 /* RemindersViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -273,6 +303,7 @@
 				FDC467DE162762ED008C1C55 /* main.m in Sources */,
 				FDC467E2162762ED008C1C55 /* AppDelegate.m in Sources */,
 				FDC467EB162762ED008C1C55 /* contexter.xcdatamodeld in Sources */,
+				FDC4681616276729008C1C55 /* RemindersViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -281,6 +312,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FDC46801162762EE008C1C55 /* contexterTests.m in Sources */,
+				FDC4681716276729008C1C55 /* RemindersViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -441,6 +473,7 @@
 				FDC46806162762EE008C1C55 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FDC46807162762EE008C1C55 /* Build configuration list for PBXNativeTarget "contexterTests" */ = {
 			isa = XCConfigurationList;
@@ -449,6 +482,7 @@
 				FDC46809162762EE008C1C55 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
@@ -459,7 +493,8 @@
 				FDC467EA162762ED008C1C55 /* contexter.xcdatamodel */,
 			);
 			currentVersion = FDC467EA162762ED008C1C55 /* contexter.xcdatamodel */;
-			path = contexter.xcdatamodeld;
+			name = contexter.xcdatamodeld;
+			path = contexter/contexter.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
