@@ -1,0 +1,469 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FDC467D0162762ED008C1C55 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FDC467CF162762ED008C1C55 /* UIKit.framework */; };
+		FDC467D2162762ED008C1C55 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FDC467D1162762ED008C1C55 /* Foundation.framework */; };
+		FDC467D4162762ED008C1C55 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FDC467D3162762ED008C1C55 /* CoreGraphics.framework */; };
+		FDC467D6162762ED008C1C55 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FDC467D5162762ED008C1C55 /* CoreData.framework */; };
+		FDC467DC162762ED008C1C55 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FDC467DA162762ED008C1C55 /* InfoPlist.strings */; };
+		FDC467DE162762ED008C1C55 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FDC467DD162762ED008C1C55 /* main.m */; };
+		FDC467E2162762ED008C1C55 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FDC467E1162762ED008C1C55 /* AppDelegate.m */; };
+		FDC467E4162762ED008C1C55 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = FDC467E3162762ED008C1C55 /* Default.png */; };
+		FDC467E6162762ED008C1C55 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FDC467E5162762ED008C1C55 /* Default@2x.png */; };
+		FDC467E8162762ED008C1C55 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FDC467E7162762ED008C1C55 /* Default-568h@2x.png */; };
+		FDC467EB162762ED008C1C55 /* contexter.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FDC467E9162762ED008C1C55 /* contexter.xcdatamodeld */; };
+		FDC467F3162762EE008C1C55 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FDC467F2162762EE008C1C55 /* SenTestingKit.framework */; };
+		FDC467F4162762EE008C1C55 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FDC467CF162762ED008C1C55 /* UIKit.framework */; };
+		FDC467F5162762EE008C1C55 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FDC467D1162762ED008C1C55 /* Foundation.framework */; };
+		FDC467F6162762EE008C1C55 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FDC467D5162762ED008C1C55 /* CoreData.framework */; };
+		FDC467FE162762EE008C1C55 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FDC467FC162762EE008C1C55 /* InfoPlist.strings */; };
+		FDC46801162762EE008C1C55 /* contexterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FDC46800162762EE008C1C55 /* contexterTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FDC467F7162762EE008C1C55 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FDC467C2162762ED008C1C55 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FDC467CA162762ED008C1C55;
+			remoteInfo = contexter;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FDC467CB162762ED008C1C55 /* contexter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = contexter.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FDC467CF162762ED008C1C55 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		FDC467D1162762ED008C1C55 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		FDC467D3162762ED008C1C55 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		FDC467D5162762ED008C1C55 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		FDC467D9162762ED008C1C55 /* contexter-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "contexter-Info.plist"; sourceTree = "<group>"; };
+		FDC467DB162762ED008C1C55 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		FDC467DD162762ED008C1C55 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		FDC467DF162762ED008C1C55 /* contexter-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "contexter-Prefix.pch"; sourceTree = "<group>"; };
+		FDC467E0162762ED008C1C55 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		FDC467E1162762ED008C1C55 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		FDC467E3162762ED008C1C55 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		FDC467E5162762ED008C1C55 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		FDC467E7162762ED008C1C55 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		FDC467EA162762ED008C1C55 /* contexter.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = contexter.xcdatamodel; sourceTree = "<group>"; };
+		FDC467F1162762EE008C1C55 /* contexterTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = contexterTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FDC467F2162762EE008C1C55 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		FDC467FB162762EE008C1C55 /* contexterTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "contexterTests-Info.plist"; sourceTree = "<group>"; };
+		FDC467FD162762EE008C1C55 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		FDC467FF162762EE008C1C55 /* contexterTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = contexterTests.h; sourceTree = "<group>"; };
+		FDC46800162762EE008C1C55 /* contexterTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = contexterTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FDC467C8162762ED008C1C55 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FDC467D0162762ED008C1C55 /* UIKit.framework in Frameworks */,
+				FDC467D2162762ED008C1C55 /* Foundation.framework in Frameworks */,
+				FDC467D4162762ED008C1C55 /* CoreGraphics.framework in Frameworks */,
+				FDC467D6162762ED008C1C55 /* CoreData.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FDC467ED162762EE008C1C55 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FDC467F3162762EE008C1C55 /* SenTestingKit.framework in Frameworks */,
+				FDC467F4162762EE008C1C55 /* UIKit.framework in Frameworks */,
+				FDC467F5162762EE008C1C55 /* Foundation.framework in Frameworks */,
+				FDC467F6162762EE008C1C55 /* CoreData.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FDC467C0162762ED008C1C55 = {
+			isa = PBXGroup;
+			children = (
+				FDC467D7162762ED008C1C55 /* contexter */,
+				FDC467F9162762EE008C1C55 /* contexterTests */,
+				FDC467CE162762ED008C1C55 /* Frameworks */,
+				FDC467CC162762ED008C1C55 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FDC467CC162762ED008C1C55 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FDC467CB162762ED008C1C55 /* contexter.app */,
+				FDC467F1162762EE008C1C55 /* contexterTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FDC467CE162762ED008C1C55 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FDC467CF162762ED008C1C55 /* UIKit.framework */,
+				FDC467D1162762ED008C1C55 /* Foundation.framework */,
+				FDC467D3162762ED008C1C55 /* CoreGraphics.framework */,
+				FDC467D5162762ED008C1C55 /* CoreData.framework */,
+				FDC467F2162762EE008C1C55 /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FDC467D7162762ED008C1C55 /* contexter */ = {
+			isa = PBXGroup;
+			children = (
+				FDC467E0162762ED008C1C55 /* AppDelegate.h */,
+				FDC467E1162762ED008C1C55 /* AppDelegate.m */,
+				FDC467E9162762ED008C1C55 /* contexter.xcdatamodeld */,
+				FDC467D8162762ED008C1C55 /* Supporting Files */,
+			);
+			path = contexter;
+			sourceTree = "<group>";
+		};
+		FDC467D8162762ED008C1C55 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FDC467D9162762ED008C1C55 /* contexter-Info.plist */,
+				FDC467DA162762ED008C1C55 /* InfoPlist.strings */,
+				FDC467DD162762ED008C1C55 /* main.m */,
+				FDC467DF162762ED008C1C55 /* contexter-Prefix.pch */,
+				FDC467E3162762ED008C1C55 /* Default.png */,
+				FDC467E5162762ED008C1C55 /* Default@2x.png */,
+				FDC467E7162762ED008C1C55 /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FDC467F9162762EE008C1C55 /* contexterTests */ = {
+			isa = PBXGroup;
+			children = (
+				FDC467FF162762EE008C1C55 /* contexterTests.h */,
+				FDC46800162762EE008C1C55 /* contexterTests.m */,
+				FDC467FA162762EE008C1C55 /* Supporting Files */,
+			);
+			path = contexterTests;
+			sourceTree = "<group>";
+		};
+		FDC467FA162762EE008C1C55 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FDC467FB162762EE008C1C55 /* contexterTests-Info.plist */,
+				FDC467FC162762EE008C1C55 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FDC467CA162762ED008C1C55 /* contexter */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FDC46804162762EE008C1C55 /* Build configuration list for PBXNativeTarget "contexter" */;
+			buildPhases = (
+				FDC467C7162762ED008C1C55 /* Sources */,
+				FDC467C8162762ED008C1C55 /* Frameworks */,
+				FDC467C9162762ED008C1C55 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = contexter;
+			productName = contexter;
+			productReference = FDC467CB162762ED008C1C55 /* contexter.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FDC467F0162762EE008C1C55 /* contexterTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FDC46807162762EE008C1C55 /* Build configuration list for PBXNativeTarget "contexterTests" */;
+			buildPhases = (
+				FDC467EC162762EE008C1C55 /* Sources */,
+				FDC467ED162762EE008C1C55 /* Frameworks */,
+				FDC467EE162762EE008C1C55 /* Resources */,
+				FDC467EF162762EE008C1C55 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FDC467F8162762EE008C1C55 /* PBXTargetDependency */,
+			);
+			name = contexterTests;
+			productName = contexterTests;
+			productReference = FDC467F1162762EE008C1C55 /* contexterTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FDC467C2162762ED008C1C55 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = "Jonathan Barnes";
+			};
+			buildConfigurationList = FDC467C5162762ED008C1C55 /* Build configuration list for PBXProject "contexter" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = FDC467C0162762ED008C1C55;
+			productRefGroup = FDC467CC162762ED008C1C55 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FDC467CA162762ED008C1C55 /* contexter */,
+				FDC467F0162762EE008C1C55 /* contexterTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FDC467C9162762ED008C1C55 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FDC467DC162762ED008C1C55 /* InfoPlist.strings in Resources */,
+				FDC467E4162762ED008C1C55 /* Default.png in Resources */,
+				FDC467E6162762ED008C1C55 /* Default@2x.png in Resources */,
+				FDC467E8162762ED008C1C55 /* Default-568h@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FDC467EE162762EE008C1C55 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FDC467FE162762EE008C1C55 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		FDC467EF162762EE008C1C55 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FDC467C7162762ED008C1C55 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FDC467DE162762ED008C1C55 /* main.m in Sources */,
+				FDC467E2162762ED008C1C55 /* AppDelegate.m in Sources */,
+				FDC467EB162762ED008C1C55 /* contexter.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FDC467EC162762EE008C1C55 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FDC46801162762EE008C1C55 /* contexterTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FDC467F8162762EE008C1C55 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FDC467CA162762ED008C1C55 /* contexter */;
+			targetProxy = FDC467F7162762EE008C1C55 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FDC467DA162762ED008C1C55 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FDC467DB162762ED008C1C55 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		FDC467FC162762EE008C1C55 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FDC467FD162762EE008C1C55 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FDC46802162762EE008C1C55 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FDC46803162762EE008C1C55 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FDC46805162762EE008C1C55 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "contexter/contexter-Prefix.pch";
+				INFOPLIST_FILE = "contexter/contexter-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		FDC46806162762EE008C1C55 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "contexter/contexter-Prefix.pch";
+				INFOPLIST_FILE = "contexter/contexter-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		FDC46808162762EE008C1C55 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/contexter.app/contexter";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "contexter/contexter-Prefix.pch";
+				INFOPLIST_FILE = "contexterTests/contexterTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		FDC46809162762EE008C1C55 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/contexter.app/contexter";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "contexter/contexter-Prefix.pch";
+				INFOPLIST_FILE = "contexterTests/contexterTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FDC467C5162762ED008C1C55 /* Build configuration list for PBXProject "contexter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FDC46802162762EE008C1C55 /* Debug */,
+				FDC46803162762EE008C1C55 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FDC46804162762EE008C1C55 /* Build configuration list for PBXNativeTarget "contexter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FDC46805162762EE008C1C55 /* Debug */,
+				FDC46806162762EE008C1C55 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		FDC46807162762EE008C1C55 /* Build configuration list for PBXNativeTarget "contexterTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FDC46808162762EE008C1C55 /* Debug */,
+				FDC46809162762EE008C1C55 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		FDC467E9162762ED008C1C55 /* contexter.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				FDC467EA162762ED008C1C55 /* contexter.xcdatamodel */,
+			);
+			currentVersion = FDC467EA162762ED008C1C55 /* contexter.xcdatamodel */;
+			path = contexter.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = FDC467C2162762ED008C1C55 /* Project object */;
+}
