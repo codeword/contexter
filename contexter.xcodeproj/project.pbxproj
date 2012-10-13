@@ -11,8 +11,10 @@
 		FD8779EB1629FF450046D1AE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FDC467CF162762ED008C1C55 /* UIKit.framework */; };
 		FD8779EC1629FF450046D1AE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FDC467D1162762ED008C1C55 /* Foundation.framework */; };
 		FD8779F21629FF450046D1AE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FD8779F01629FF450046D1AE /* InfoPlist.strings */; };
-		FD8779F41629FF450046D1AE /* ExampleSpec.mm in Sources */ = {isa = PBXBuildFile; fileRef = FD8779F31629FF450046D1AE /* ExampleSpec.mm */; };
 		FD8779F61629FF450046D1AE /* Cedar-iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD8779F51629FF450046D1AE /* Cedar-iOS.framework */; };
+		FDBB597F162A0935002BAC82 /* RemindersViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FDBB597D162A0935002BAC82 /* RemindersViewController.m */; };
+		FDBB5980162A0935002BAC82 /* RemindersViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FDBB597E162A0935002BAC82 /* RemindersViewController.xib */; };
+		FDBB598B162A0A2B002BAC82 /* RemindersViewControllerSpec.mm in Sources */ = {isa = PBXBuildFile; fileRef = FDBB598A162A0A2B002BAC82 /* RemindersViewControllerSpec.mm */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		FDC467D0162762ED008C1C55 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FDC467CF162762ED008C1C55 /* UIKit.framework */; };
 		FDC467D2162762ED008C1C55 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FDC467D1162762ED008C1C55 /* Foundation.framework */; };
 		FDC467D4162762ED008C1C55 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FDC467D3162762ED008C1C55 /* CoreGraphics.framework */; };
@@ -24,17 +26,19 @@
 		FDC467E6162762ED008C1C55 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FDC467E5162762ED008C1C55 /* Default@2x.png */; };
 		FDC467E8162762ED008C1C55 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FDC467E7162762ED008C1C55 /* Default-568h@2x.png */; };
 		FDC467EB162762ED008C1C55 /* contexter.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FDC467E9162762ED008C1C55 /* contexter.xcdatamodeld */; };
-		FDC4681616276729008C1C55 /* RemindersViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FDC4681416276729008C1C55 /* RemindersViewController.m */; };
-		FDC4681816276729008C1C55 /* RemindersViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FDC4681516276729008C1C55 /* RemindersViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		FD8779E91629FF450046D1AE /* Specs.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Specs.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD8779EF1629FF450046D1AE /* Specs-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Specs-Info.plist"; sourceTree = "<group>"; };
 		FD8779F11629FF450046D1AE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		FD8779F31629FF450046D1AE /* ExampleSpec.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ExampleSpec.mm; sourceTree = "<group>"; };
 		FD8779F51629FF450046D1AE /* Cedar-iOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "Cedar-iOS.framework"; path = "Frameworks/Cedar-iOS.framework"; sourceTree = "<group>"; };
 		FD8779F71629FF450046D1AE /* Specs-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Specs-Prefix.pch"; sourceTree = "<group>"; };
+		FDBB597C162A0935002BAC82 /* RemindersViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RemindersViewController.h; path = UI/Controllers/RemindersViewController.h; sourceTree = "<group>"; };
+		FDBB597D162A0935002BAC82 /* RemindersViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RemindersViewController.m; path = UI/Controllers/RemindersViewController.m; sourceTree = "<group>"; };
+		FDBB597E162A0935002BAC82 /* RemindersViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = RemindersViewController.xib; path = UI/Controllers/RemindersViewController.xib; sourceTree = "<group>"; };
+		FDBB598A162A0A2B002BAC82 /* RemindersViewControllerSpec.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = RemindersViewControllerSpec.mm; sourceTree = "<group>"; };
+		FDBB598E162A0FBB002BAC82 /* SpecHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SpecHelper.h; sourceTree = "<group>"; };
 		FDC467CB162762ED008C1C55 /* contexter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = contexter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FDC467CF162762ED008C1C55 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		FDC467D1162762ED008C1C55 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -51,9 +55,6 @@
 		FDC467E7162762ED008C1C55 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		FDC467EA162762ED008C1C55 /* contexter.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = contexter.xcdatamodel; sourceTree = "<group>"; };
 		FDC467F2162762EE008C1C55 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
-		FDC4681316276729008C1C55 /* RemindersViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RemindersViewController.h; sourceTree = "<group>"; };
-		FDC4681416276729008C1C55 /* RemindersViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RemindersViewController.m; sourceTree = "<group>"; };
-		FDC4681516276729008C1C55 /* RemindersViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RemindersViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,8 +98,9 @@
 		FD8779ED1629FF450046D1AE /* Specs */ = {
 			isa = PBXGroup;
 			children = (
-				FD8779F31629FF450046D1AE /* ExampleSpec.mm */,
+				FDBB5988162A0A2B002BAC82 /* UI */,
 				FD8779F51629FF450046D1AE /* Cedar-iOS.framework */,
+				FDBB598D162A0FA9002BAC82 /* Support */,
 				FD8779EE1629FF450046D1AE /* Supporting Files */,
 			);
 			path = Specs;
@@ -112,6 +114,30 @@
 				FD8779F71629FF450046D1AE /* Specs-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FDBB5988162A0A2B002BAC82 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				FDBB5989162A0A2B002BAC82 /* Controllers */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		FDBB5989162A0A2B002BAC82 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				FDBB598A162A0A2B002BAC82 /* RemindersViewControllerSpec.mm */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		FDBB598D162A0FA9002BAC82 /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				FDBB598E162A0FBB002BAC82 /* SpecHelper.h */,
+			);
+			path = Support;
 			sourceTree = "<group>";
 		};
 		FDC467C0162762ED008C1C55 = {
@@ -172,9 +198,9 @@
 		FDC46812162766D6008C1C55 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				FDC4681316276729008C1C55 /* RemindersViewController.h */,
-				FDC4681416276729008C1C55 /* RemindersViewController.m */,
-				FDC4681516276729008C1C55 /* RemindersViewController.xib */,
+				FDBB597C162A0935002BAC82 /* RemindersViewController.h */,
+				FDBB597D162A0935002BAC82 /* RemindersViewController.m */,
+				FDBB597E162A0935002BAC82 /* RemindersViewController.xib */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -261,7 +287,7 @@
 				FDC467E4162762ED008C1C55 /* Default.png in Resources */,
 				FDC467E6162762ED008C1C55 /* Default@2x.png in Resources */,
 				FDC467E8162762ED008C1C55 /* Default-568h@2x.png in Resources */,
-				FDC4681816276729008C1C55 /* RemindersViewController.xib in Resources */,
+				FDBB5980162A0935002BAC82 /* RemindersViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -288,7 +314,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FD8779F41629FF450046D1AE /* ExampleSpec.mm in Sources */,
+				FDBB598B162A0A2B002BAC82 /* RemindersViewControllerSpec.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -299,7 +325,7 @@
 				FDC467DE162762ED008C1C55 /* main.m in Sources */,
 				FDC467E2162762ED008C1C55 /* AppDelegate.m in Sources */,
 				FDC467EB162762ED008C1C55 /* contexter.xcdatamodeld in Sources */,
-				FDC4681616276729008C1C55 /* RemindersViewController.m in Sources */,
+				FDBB597F162A0935002BAC82 /* RemindersViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
