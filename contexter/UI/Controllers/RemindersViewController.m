@@ -1,24 +1,12 @@
-//
-//  RemindersViewController.m
-//  contexter
-//
-//  Created by Jonathan Barnes on 10/11/12.
-//  Copyright (c) 2012 Jonathan Barnes. All rights reserved.
-//
-
 #import "RemindersViewController.h"
-
-@interface RemindersViewController ()
-
-@end
+#import "Reminder.h"
 
 @implementation RemindersViewController
 
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
-{
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
+- (id)initWithInjector:(DependencyInjector *)injector {
+    self = [super initWithNibName:nil bundle:nil];
     if (self) {
-        // Custom initialization
+      self.injector = injector;
     }
     return self;
 }
@@ -33,6 +21,21 @@
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+#pragma UITableViewDataSource methods
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+  return [[Reminder allInContext:self.injector.context] count];
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+  Reminder *reminder = (Reminder *)[[Reminder allInContext:self.injector.context] objectAtIndex:indexPath.row];
+  UITableViewCell *cell;
+  if (!(cell = [tableView dequeueReusableCellWithIdentifier:@"ReminderCell"])) {
+    cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"ReminderCell"];
+  }
+  cell.textLabel.text = reminder.title;
+  return cell;
 }
 
 @end

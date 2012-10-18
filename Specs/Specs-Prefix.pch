@@ -6,5 +6,5 @@
   #import <UIKit/UIKit.h>
   #import <Foundation/Foundation.h>
   #import <Cedar-iOS/SpecHelper.h>
-  #import "Support/SpecHelper.h"
+  #import "SpecHelper.h"
 #endif

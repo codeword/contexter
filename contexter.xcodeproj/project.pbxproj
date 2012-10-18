@@ -14,7 +14,10 @@
 		FD8779F61629FF450046D1AE /* Cedar-iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD8779F51629FF450046D1AE /* Cedar-iOS.framework */; };
 		FDBB597F162A0935002BAC82 /* RemindersViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FDBB597D162A0935002BAC82 /* RemindersViewController.m */; };
 		FDBB5980162A0935002BAC82 /* RemindersViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FDBB597E162A0935002BAC82 /* RemindersViewController.xib */; };
-		FDBB598B162A0A2B002BAC82 /* RemindersViewControllerSpec.mm in Sources */ = {isa = PBXBuildFile; fileRef = FDBB598A162A0A2B002BAC82 /* RemindersViewControllerSpec.mm */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		FDBB5995162F9788002BAC82 /* RemindersViewControllerSpec.mm in Sources */ = {isa = PBXBuildFile; fileRef = FDBB598A162A0A2B002BAC82 /* RemindersViewControllerSpec.mm */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		FDBB599E162FA5E9002BAC82 /* DependencyInjector.m in Sources */ = {isa = PBXBuildFile; fileRef = FDBB599B162FA5E9002BAC82 /* DependencyInjector.m */; };
+		FDBB59A0162FA5E9002BAC82 /* Reminder.m in Sources */ = {isa = PBXBuildFile; fileRef = FDBB599D162FA5E9002BAC82 /* Reminder.m */; };
+		FDBB59A4162FAE13002BAC82 /* ReminderSpec.mm in Sources */ = {isa = PBXBuildFile; fileRef = FDBB59A3162FAE13002BAC82 /* ReminderSpec.mm */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		FDC467D0162762ED008C1C55 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FDC467CF162762ED008C1C55 /* UIKit.framework */; };
 		FDC467D2162762ED008C1C55 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FDC467D1162762ED008C1C55 /* Foundation.framework */; };
 		FDC467D4162762ED008C1C55 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FDC467D3162762ED008C1C55 /* CoreGraphics.framework */; };
@@ -39,6 +42,11 @@
 		FDBB597E162A0935002BAC82 /* RemindersViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = RemindersViewController.xib; path = UI/Controllers/RemindersViewController.xib; sourceTree = "<group>"; };
 		FDBB598A162A0A2B002BAC82 /* RemindersViewControllerSpec.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = RemindersViewControllerSpec.mm; sourceTree = "<group>"; };
 		FDBB598E162A0FBB002BAC82 /* SpecHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SpecHelper.h; sourceTree = "<group>"; };
+		FDBB599A162FA5E9002BAC82 /* DependencyInjector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DependencyInjector.h; path = contexter/Models/DependencyInjector.h; sourceTree = "<group>"; };
+		FDBB599B162FA5E9002BAC82 /* DependencyInjector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DependencyInjector.m; path = contexter/Models/DependencyInjector.m; sourceTree = "<group>"; };
+		FDBB599C162FA5E9002BAC82 /* Reminder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Reminder.h; path = contexter/Models/Reminder.h; sourceTree = "<group>"; };
+		FDBB599D162FA5E9002BAC82 /* Reminder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Reminder.m; path = contexter/Models/Reminder.m; sourceTree = "<group>"; };
+		FDBB59A3162FAE13002BAC82 /* ReminderSpec.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = ReminderSpec.mm; path = Models/ReminderSpec.mm; sourceTree = "<group>"; };
 		FDC467CB162762ED008C1C55 /* contexter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = contexter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FDC467CF162762ED008C1C55 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		FDC467D1162762ED008C1C55 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -90,6 +98,7 @@
 				FDC467E0162762ED008C1C55 /* AppDelegate.h */,
 				FDC467E1162762ED008C1C55 /* AppDelegate.m */,
 				FDC467E9162762ED008C1C55 /* contexter.xcdatamodeld */,
+				FDBB5994162F970F002BAC82 /* Models */,
 				FDC46811162766CA008C1C55 /* UI */,
 			);
 			name = contexter;
@@ -98,6 +107,7 @@
 		FD8779ED1629FF450046D1AE /* Specs */ = {
 			isa = PBXGroup;
 			children = (
+				FDBB59A2162FADEF002BAC82 /* Models */,
 				FDBB5988162A0A2B002BAC82 /* UI */,
 				FD8779F51629FF450046D1AE /* Cedar-iOS.framework */,
 				FDBB598D162A0FA9002BAC82 /* Support */,
@@ -138,6 +148,25 @@
 				FDBB598E162A0FBB002BAC82 /* SpecHelper.h */,
 			);
 			path = Support;
+			sourceTree = "<group>";
+		};
+		FDBB5994162F970F002BAC82 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				FDBB599A162FA5E9002BAC82 /* DependencyInjector.h */,
+				FDBB599B162FA5E9002BAC82 /* DependencyInjector.m */,
+				FDBB599C162FA5E9002BAC82 /* Reminder.h */,
+				FDBB599D162FA5E9002BAC82 /* Reminder.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		FDBB59A2162FADEF002BAC82 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				FDBB59A3162FAE13002BAC82 /* ReminderSpec.mm */,
+			);
+			name = Models;
 			sourceTree = "<group>";
 		};
 		FDC467C0162762ED008C1C55 = {
@@ -314,7 +343,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FDBB598B162A0A2B002BAC82 /* RemindersViewControllerSpec.mm in Sources */,
+				FDBB5995162F9788002BAC82 /* RemindersViewControllerSpec.mm in Sources */,
+				FDBB59A4162FAE13002BAC82 /* ReminderSpec.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -326,6 +356,8 @@
 				FDC467E2162762ED008C1C55 /* AppDelegate.m in Sources */,
 				FDC467EB162762ED008C1C55 /* contexter.xcdatamodeld in Sources */,
 				FDBB597F162A0935002BAC82 /* RemindersViewController.m in Sources */,
+				FDBB599E162FA5E9002BAC82 /* DependencyInjector.m in Sources */,
+				FDBB59A0162FA5E9002BAC82 /* Reminder.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

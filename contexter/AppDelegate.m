@@ -21,7 +21,9 @@
   // Override point for customization after application launch.
   self.window.backgroundColor = [UIColor whiteColor];
   [self.window makeKeyAndVisible];
-  UIViewController *remindersControlller = [[RemindersViewController alloc] initWithNibName:nil bundle:nil];
+  self.injector = [[DependencyInjector alloc] init];
+  UIViewController *remindersControlller = [[RemindersViewController alloc] initWithInjector:self.injector];
+
   UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:remindersControlller];
   self.window.rootViewController = nav;
   
@@ -108,11 +110,11 @@
         return _persistentStoreCoordinator;
     }
     
-    NSURL *storeURL = [[self applicationDocumentsDirectory] URLByAppendingPathComponent:@"contexter.sqlite"];
-    
+//    NSURL *storeURL = [[self applicationDocumentsDirectory] URLByAppendingPathComponent:@"contexter.sqlite"];
+
     NSError *error = nil;
     _persistentStoreCoordinator = [[NSPersistentStoreCoordinator alloc] initWithManagedObjectModel:[self managedObjectModel]];
-    if (![_persistentStoreCoordinator addPersistentStoreWithType:NSSQLiteStoreType configuration:nil URL:storeURL options:nil error:&error]) {
+    if (![_persistentStoreCoordinator addPersistentStoreWithType:NSInMemoryStoreType configuration:nil URL:nil options:nil error:&error]) {
         /*
          Replace this implementation with code to handle the error appropriately.
          
@@ -148,7 +150,8 @@
 // Returns the URL to the application's Documents directory.
 - (NSURL *)applicationDocumentsDirectory
 {
-    return [[[NSFileManager defaultManager] URLsForDirectory:NSDocumentDirectory inDomains:NSUserDomainMask] lastObject];
+  NSLog(@"================>x %@", [[[NSFileManager defaultManager] URLsForDirectory:NSDocumentDirectory inDomains:NSUserDomainMask] lastObject]);
+  return [[[NSFileManager defaultManager] URLsForDirectory:NSDocumentDirectory inDomains:NSUserDomainMask] lastObject];
 }
 
 @end

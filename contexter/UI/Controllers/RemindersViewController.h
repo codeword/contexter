@@ -1,13 +1,9 @@
-//
-//  RemindersViewController.h
-//  contexter
-//
-//  Created by Jonathan Barnes on 10/11/12.
-//  Copyright (c) 2012 Jonathan Barnes. All rights reserved.
-//
-
 #import <UIKit/UIKit.h>
+#import "DependencyInjector.h"
 
-@interface RemindersViewController : UIViewController
+@interface RemindersViewController : UIViewController <UITableViewDataSource>
+@property (weak, nonatomic) IBOutlet UITableView *remindersTableView;
+@property (weak, nonatomic) DependencyInjector *injector;
 
+- (id)initWithInjector:(DependencyInjector *)injector;
 @end
