@@ -6,5 +6,8 @@
   #import <UIKit/UIKit.h>
   #import <Foundation/Foundation.h>
   #import <Cedar-iOS/SpecHelper.h>
+  #import <OCMock-iPhone/OCMock.h>
+  #import <CoreData/CoreData.h>
   #import "SpecHelper.h"
+  #import "Fixtures.h"
 #endif

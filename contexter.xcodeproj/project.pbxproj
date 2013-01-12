@@ -7,11 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FD481BE4163CE8E1008F94F8 /* ReminderCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FD481BE3163CE8E1008F94F8 /* ReminderCell.m */; };
 		FD8779EA1629FF450046D1AE /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FDC467F2162762EE008C1C55 /* SenTestingKit.framework */; };
 		FD8779EB1629FF450046D1AE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FDC467CF162762ED008C1C55 /* UIKit.framework */; };
 		FD8779EC1629FF450046D1AE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FDC467D1162762ED008C1C55 /* Foundation.framework */; };
 		FD8779F21629FF450046D1AE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FD8779F01629FF450046D1AE /* InfoPlist.strings */; };
 		FD8779F61629FF450046D1AE /* Cedar-iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD8779F51629FF450046D1AE /* Cedar-iOS.framework */; };
+		FDA1D44C16574044009533DB /* ReminderCellSpec.mm in Sources */ = {isa = PBXBuildFile; fileRef = FDA1D44B16574044009533DB /* ReminderCellSpec.mm */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		FDA1D44F165740CF009533DB /* Fixtures.m in Sources */ = {isa = PBXBuildFile; fileRef = FDA1D44E165740CF009533DB /* Fixtures.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		FDA85DED165C888F00C7DA3C /* OCMock-iPhone.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FDA85DEC165C888F00C7DA3C /* OCMock-iPhone.framework */; };
 		FDBB597F162A0935002BAC82 /* RemindersViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FDBB597D162A0935002BAC82 /* RemindersViewController.m */; };
 		FDBB5980162A0935002BAC82 /* RemindersViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FDBB597E162A0935002BAC82 /* RemindersViewController.xib */; };
 		FDBB5995162F9788002BAC82 /* RemindersViewControllerSpec.mm in Sources */ = {isa = PBXBuildFile; fileRef = FDBB598A162A0A2B002BAC82 /* RemindersViewControllerSpec.mm */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
@@ -32,11 +36,17 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FD481BE2163CE8E1008F94F8 /* ReminderCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ReminderCell.h; path = UI/Views/ReminderCell.h; sourceTree = "<group>"; };
+		FD481BE3163CE8E1008F94F8 /* ReminderCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ReminderCell.m; path = UI/Views/ReminderCell.m; sourceTree = "<group>"; };
 		FD8779E91629FF450046D1AE /* Specs.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Specs.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD8779EF1629FF450046D1AE /* Specs-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Specs-Info.plist"; sourceTree = "<group>"; };
 		FD8779F11629FF450046D1AE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		FD8779F51629FF450046D1AE /* Cedar-iOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "Cedar-iOS.framework"; path = "Frameworks/Cedar-iOS.framework"; sourceTree = "<group>"; };
 		FD8779F71629FF450046D1AE /* Specs-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Specs-Prefix.pch"; sourceTree = "<group>"; };
+		FDA1D44B16574044009533DB /* ReminderCellSpec.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = ReminderCellSpec.mm; path = Views/ReminderCellSpec.mm; sourceTree = "<group>"; };
+		FDA1D44D165740CF009533DB /* Fixtures.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Fixtures.h; sourceTree = "<group>"; };
+		FDA1D44E165740CF009533DB /* Fixtures.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Fixtures.m; sourceTree = "<group>"; };
+		FDA85DEC165C888F00C7DA3C /* OCMock-iPhone.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "OCMock-iPhone.framework"; path = "Frameworks/OCMock-iPhone.framework"; sourceTree = "<group>"; };
 		FDBB597C162A0935002BAC82 /* RemindersViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RemindersViewController.h; path = UI/Controllers/RemindersViewController.h; sourceTree = "<group>"; };
 		FDBB597D162A0935002BAC82 /* RemindersViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RemindersViewController.m; path = UI/Controllers/RemindersViewController.m; sourceTree = "<group>"; };
 		FDBB597E162A0935002BAC82 /* RemindersViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = RemindersViewController.xib; path = UI/Controllers/RemindersViewController.xib; sourceTree = "<group>"; };
@@ -74,6 +84,7 @@
 				FD8779EB1629FF450046D1AE /* UIKit.framework in Frameworks */,
 				FD8779EC1629FF450046D1AE /* Foundation.framework in Frameworks */,
 				FD8779F61629FF450046D1AE /* Cedar-iOS.framework in Frameworks */,
+				FDA85DED165C888F00C7DA3C /* OCMock-iPhone.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -91,6 +102,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FD481BE0163CE892008F94F8 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				FD481BE2163CE8E1008F94F8 /* ReminderCell.h */,
+				FD481BE3163CE8E1008F94F8 /* ReminderCell.m */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
 		FD67541816276AB400D9A83E /* contexter */ = {
 			isa = PBXGroup;
 			children = (
@@ -107,9 +127,9 @@
 		FD8779ED1629FF450046D1AE /* Specs */ = {
 			isa = PBXGroup;
 			children = (
+				FDA85DEA165C87D800C7DA3C /* Frameworks */,
 				FDBB59A2162FADEF002BAC82 /* Models */,
 				FDBB5988162A0A2B002BAC82 /* UI */,
-				FD8779F51629FF450046D1AE /* Cedar-iOS.framework */,
 				FDBB598D162A0FA9002BAC82 /* Support */,
 				FD8779EE1629FF450046D1AE /* Supporting Files */,
 			);
@@ -126,9 +146,27 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		FDA1D44916574012009533DB /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				FDA1D44B16574044009533DB /* ReminderCellSpec.mm */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		FDA85DEA165C87D800C7DA3C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FDA85DEC165C888F00C7DA3C /* OCMock-iPhone.framework */,
+				FD8779F51629FF450046D1AE /* Cedar-iOS.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		FDBB5988162A0A2B002BAC82 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				FDA1D44916574012009533DB /* Views */,
 				FDBB5989162A0A2B002BAC82 /* Controllers */,
 			);
 			path = UI;
@@ -146,6 +184,8 @@
 			isa = PBXGroup;
 			children = (
 				FDBB598E162A0FBB002BAC82 /* SpecHelper.h */,
+				FDA1D44D165740CF009533DB /* Fixtures.h */,
+				FDA1D44E165740CF009533DB /* Fixtures.m */,
 			);
 			path = Support;
 			sourceTree = "<group>";
@@ -218,6 +258,7 @@
 		FDC46811162766CA008C1C55 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				FD481BE0163CE892008F94F8 /* Views */,
 				FDC46812162766D6008C1C55 /* Controllers */,
 			);
 			name = UI;
@@ -345,6 +386,8 @@
 			files = (
 				FDBB5995162F9788002BAC82 /* RemindersViewControllerSpec.mm in Sources */,
 				FDBB59A4162FAE13002BAC82 /* ReminderSpec.mm in Sources */,
+				FDA1D44C16574044009533DB /* ReminderCellSpec.mm in Sources */,
+				FDA1D44F165740CF009533DB /* Fixtures.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -358,6 +401,7 @@
 				FDBB597F162A0935002BAC82 /* RemindersViewController.m in Sources */,
 				FDBB599E162FA5E9002BAC82 /* DependencyInjector.m in Sources */,
 				FDBB59A0162FA5E9002BAC82 /* Reminder.m in Sources */,
+				FD481BE4163CE8E1008F94F8 /* ReminderCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
